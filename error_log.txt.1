@@ -1,0 +1,50 @@
+2024-09-11 21:04:44,533 ERROR: Error in preprocess_audio: Decoding failed. ffmpeg returned error code: 183
+
+Output from ffmpeg/avlib:
+
+ffmpeg version 6.1.1 Copyright (c) 2000-2023 the FFmpeg developers
+  built with gcc 13.2.0 (GCC)
+  configuration: --disable-static --prefix=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-ffmpeg-full-6.1.1 --target_os=linux --arch=x86_64 --pkg-config=pkg-config --enable-gpl --enable-version3 --disable-nonfree --disable-static --enable-shared --enable-pic --disable-thumb --disable-small --enable-runtime-cpudetect --enable-gray --enable-swscale-alpha --enable-hardcoded-tables --enable-safe-bitstream-reader --enable-pthreads --disable-w32threads --disable-os2threads --enable-network --enable-pixelutils --datadir=/nix/store/vw5i4jipdcljaczhab5cs3iyh57dgfij-ffmpeg-full-6.1.1-data/share/ffmpeg --enable-ffmpeg --enable-ffplay --enable-ffprobe --bindir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-ffmpeg-full-6.1.1-bin/bin --enable-avcodec --enable-avdevice --enable-avfilter --enable-avformat --enable-avutil --enable-postproc --enable-swresample --enable-swscale --libdir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-ffmpeg-full-6.1.1-lib/lib --incdir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-ffmpeg-full-6.1.1-dev/include --enable-doc --enable-htmlpages --enable-manpages --mandir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-ffmpeg-full-6.1.1-man/share/man --enable-podpages --enable-txtpages --docdir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-ffmpeg-full-6.1.1-doc/share/doc/ffmpeg --enable-alsa --enable-libaom --disable-appkit --enable-libaribcaption --enable-libass --disable-audiotoolbox --disable-avfoundation --enable-avisynth --enable-libbluray --enable-libbs2b --enable-bzlib --enable-libcaca --enable-libcelt --enable-chromaprint --enable-libcodec2 --disable-coreimage --enable-cuda --enable-cuda-llvm --enable-cuvid --enable-libdav1d --enable-libdc1394 --enable-libdrm --disable-libfdk-aac --enable-ffnvcodec --enable-libflite --enable-fontconfig --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libfribidi --enable-libgme --enable-gnutls --enable-libgsm --enable-libharfbuzz --enable-iconv --enable-libjack --enable-libjxl --enable-ladspa --enable-lzma --enable-libmfx --enable-libmodplug --enable-libmp3lame --enable-libmysofa --enable-nvdec --enable-nvenc --enable-openal --enable-opencl --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-opengl --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libplacebo --enable-libpulse --enable-librav1e --enable-librtmp --enable-libsmbclient --enable-sdl2 --enable-libshaderc --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-librsvg --enable-libsvtav1 --disable-libtensorflow --enable-libtheora --enable-libv4l2 --enable-v4l2-m2m --enable-vaapi --enable-vdpau --disable-libvpl --disable-videotoolbox --enable-libvidstab --enable-libvmaf --enable-libvo-amrwbenc --enable-libvorbis --enable-libvpx --enable-vulkan --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs --enable-libxcb --enable-libxcb-shape --enable-libxcb-shm --enable-libxcb-xfixes --enable-xlib --enable-libxml2 --enable-libxvid --enable-libzimg --enable-zlib --enable-libzmq --disable-debug --enable-optimizations --disable-extra-warnings --disable-stripping
+  libavutil      58. 29.100 / 58. 29.100
+  libavcodec     60. 31.102 / 60. 31.102
+  libavformat    60. 16.100 / 60. 16.100
+  libavdevice    60.  3.100 / 60.  3.100
+  libavfilter     9. 12.100 /  9. 12.100
+  libswscale      7.  5.100 /  7.  5.100
+  libswresample   4. 12.100 /  4. 12.100
+  libpostproc    57.  3.100 / 57.  3.100
+[matroska,webm @ 0x1452400] EBML header parsing failed
+[in#0 @ 0x1452300] Error opening input: Invalid data found when processing input
+Error opening input file /tmp/tmpbe791up7.webm.
+Error opening input files: Invalid data found when processing input
+ [in /home/runner/WhisperTranscribeLive/main.py:53]
+2024-09-11 21:04:44,534 ERROR: Error in handle_transcribe: Audio preprocessing failed [in /home/runner/WhisperTranscribeLive/main.py:101]
+Traceback (most recent call last):
+  File "/home/runner/WhisperTranscribeLive/main.py", line 82, in handle_transcribe
+    raise ValueError("Audio preprocessing failed")
+ValueError: Audio preprocessing failed
+2024-09-11 21:04:47,476 ERROR: Error in preprocess_audio: Decoding failed. ffmpeg returned error code: 183
+
+Output from ffmpeg/avlib:
+
+ffmpeg version 6.1.1 Copyright (c) 2000-2023 the FFmpeg developers
+  built with gcc 13.2.0 (GCC)
+  configuration: --disable-static --prefix=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-ffmpeg-full-6.1.1 --target_os=linux --arch=x86_64 --pkg-config=pkg-config --enable-gpl --enable-version3 --disable-nonfree --disable-static --enable-shared --enable-pic --disable-thumb --disable-small --enable-runtime-cpudetect --enable-gray --enable-swscale-alpha --enable-hardcoded-tables --enable-safe-bitstream-reader --enable-pthreads --disable-w32threads --disable-os2threads --enable-network --enable-pixelutils --datadir=/nix/store/vw5i4jipdcljaczhab5cs3iyh57dgfij-ffmpeg-full-6.1.1-data/share/ffmpeg --enable-ffmpeg --enable-ffplay --enable-ffprobe --bindir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-ffmpeg-full-6.1.1-bin/bin --enable-avcodec --enable-avdevice --enable-avfilter --enable-avformat --enable-avutil --enable-postproc --enable-swresample --enable-swscale --libdir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-ffmpeg-full-6.1.1-lib/lib --incdir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-ffmpeg-full-6.1.1-dev/include --enable-doc --enable-htmlpages --enable-manpages --mandir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-ffmpeg-full-6.1.1-man/share/man --enable-podpages --enable-txtpages --docdir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-ffmpeg-full-6.1.1-doc/share/doc/ffmpeg --enable-alsa --enable-libaom --disable-appkit --enable-libaribcaption --enable-libass --disable-audiotoolbox --disable-avfoundation --enable-avisynth --enable-libbluray --enable-libbs2b --enable-bzlib --enable-libcaca --enable-libcelt --enable-chromaprint --enable-libcodec2 --disable-coreimage --enable-cuda --enable-cuda-llvm --enable-cuvid --enable-libdav1d --enable-libdc1394 --enable-libdrm --disable-libfdk-aac --enable-ffnvcodec --enable-libflite --enable-fontconfig --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libfribidi --enable-libgme --enable-gnutls --enable-libgsm --enable-libharfbuzz --enable-iconv --enable-libjack --enable-libjxl --enable-ladspa --enable-lzma --enable-libmfx --enable-libmodplug --enable-libmp3lame --enable-libmysofa --enable-nvdec --enable-nvenc --enable-openal --enable-opencl --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-opengl --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libplacebo --enable-libpulse --enable-librav1e --enable-librtmp --enable-libsmbclient --enable-sdl2 --enable-libshaderc --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-librsvg --enable-libsvtav1 --disable-libtensorflow --enable-libtheora --enable-libv4l2 --enable-v4l2-m2m --enable-vaapi --enable-vdpau --disable-libvpl --disable-videotoolbox --enable-libvidstab --enable-libvmaf --enable-libvo-amrwbenc --enable-libvorbis --enable-libvpx --enable-vulkan --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs --enable-libxcb --enable-libxcb-shape --enable-libxcb-shm --enable-libxcb-xfixes --enable-xlib --enable-libxml2 --enable-libxvid --enable-libzimg --enable-zlib --enable-libzmq --disable-debug --enable-optimizations --disable-extra-warnings --disable-stripping
+  libavutil      58. 29.100 / 58. 29.100
+  libavcodec     60. 31.102 / 60. 31.102
+  libavformat    60. 16.100 / 60. 16.100
+  libavdevice    60.  3.100 / 60.  3.100
+  libavfilter     9. 12.100 /  9. 12.100
+  libswscale      7.  5.100 /  7.  5.100
+  libswresample   4. 12.100 /  4. 12.100
+  libpostproc    57.  3.100 / 57.  3.100
+[matroska,webm @ 0x676400] EBML header parsing failed
+[in#0 @ 0x676300] Error opening input: Invalid data found when processing input
+Error opening input file /tmp/tmp3re47jmn.webm.
+Error opening input files: Invalid data found when processing input
+ [in /home/runner/WhisperTranscribeLive/main.py:53]
+2024-09-11 21:04:47,478 ERROR: Error in handle_transcribe: Audio preprocessing failed [in /home/runner/WhisperTranscribeLive/main.py:101]
+Traceback (most recent call last):
+  File "/home/runner/WhisperTranscribeLive/main.py", line 82, in handle_transcribe
+    raise ValueError("Audio preprocessing failed")
+ValueError: Audio preprocessing failed

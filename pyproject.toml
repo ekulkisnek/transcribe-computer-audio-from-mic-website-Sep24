@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "repl-nix-whispertranscribelive"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "^3.0.3"
+flask-socketio = "^5.3.7"
+flask-sqlalchemy = "^3.1.1"
+openai = "^1.44.1"
+psycopg2-binary = "^2.9.9"
+torch = "^2.4.1"
+numpy = "^2.1.1"
+ffmpeg-python = "^0.2.0"
+whisper = "^1.1.10"
+speechrecognition = "^3.10.4"
+pydub = "^0.25.1"
+faster-whisper = "^1.0.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
